@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+nav{
+    width: 100vw;
+    height: 13vh;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    overflow: hidden;
+ 
+}
+nav>ul{
+    display: flex;
+    list-style: none;
+    gap: 3vmax;
+    justify-content: center;
+    align-items: center;
+}
+nav>ul>li{
+     font-size: 2vmax;
+    color: white;
+}
+nav>ul>.nav_text1{
+    width: 15vw;
+    height: 15vh;
+    /* background-color: aqua; */
+    font-size: 5.5vmax;
+    justify-content: center;
+    align-items: center;
+   margin: 0.5vmax 0 0.5vmax 0;
+   
+}
+nav>ul>span{
+    width: 0.2vw;
+    height: 10vh;
+    background-color: white;
+}
+.content{
+    padding: 3vmax 1vmax 0 1vmax;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #00D139; */
+    
+}
+.content>.color0{
+    width: 40%;
+    height: 28%;
+    margin: 0 ;
+    border-radius: 10vmax;
+    background-color: blueviolet;
+    transform: rotate(150deg);
+    border-style: none;
+}
+.content>.color1{
+    background-color: rgb(209, 101, 101);
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: color 5s ease infinite both;
+    top: 0;
+    left: 0;
+}
+@keyframes color {
+    0%{
+        background-color:rgb(209, 101, 101);;
+        transition: all 2s ease;
+    }
+    20%{
+        background-color: #00D139;
+        transition: all 2s ease;
+    }
+    40%{
+        background-color: #E99330;
+        transition: all 2s ease;
+    }
+    60%{
+        background-color:#8B1A62;
+        transition: all 1s ease;
+    }
+    80%{
+        background-color:royalblue;
+        transition: all 1s ease;
+    }
+    100%{
+        background-color: #6c32cf;
+        transition: all 1s ease;
+    }
+}
+.content>.color1>img{
+    width: 60%;
+    transform: rotate(210deg);
+}
+/*--------------2---------*/
+.content>.color2{
+    background-color: rgb(34, 34, 233);
+}
+.content>.color2{
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: text 5s ease infinite both;
+    top: 0;
+    left: 0;
+}
+@keyframes text {
+    0%{
+        background-color: #E99330;
+        transition: all 2s ease;
+    }
+    20%{
+        background-color:rgb(209, 101, 101);
+        transition: all 2s ease;
+    }
+    40%{
+        background-color:#8B1A62;
+        transition: all 2s ease;
+    }
+    60%{
+        background-color: rgb(12, 139, 12);
+        transition: all 1s ease;
+    }
+    80%{
+        background-color: #6c32cf;
+        transition: all 1s ease;
+    }
+    100%{
+        background-color:chartreuse;
+        transition: all 1s ease;
+    }
+    
+}
+.content>.color2>img{
+    width: 45%;
+    transform: rotate(210deg);
+}
+/*-----------------3-------------*/
+.content>.color3{
+    background-color: rgb(12, 139, 12);
+}
+.content>.color3{
+    background-color: rgb(209, 101, 101);
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: open 5s ease infinite both;
+    top: 0;
+    left: 0;
+}
+@keyframes open {
+    0%{
+        background-color:#8B1A62;
+        transition: all 2s ease;
+    }
+    20%{
+        background-color: #6c32cf;
+        transition: all 2s ease;
+    }
+    40%{
+        background-color: #00D139;
+        transition: all 2s ease;
+    }
+    60%{
+        background-color: tomato;
+        transition: all 1s ease;
+    }
+    80%{
+        background-color: #E99330;
+        transition: all 1s ease;
+    }
+    100%{
+        background-color:rgb(209, 101, 101);
+        transition: all 1s ease;
+    }
+}
+.content>.color3>img{
+    width: 60%;
+    transform: rotate(216.5deg);
+}
+/* ----------4--------------*/
+.content>.color4{
+    background-color: rgb(135, 58, 207);
+}
+.content>.color4{
+    background-color: rgb(209, 101, 101);
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: move 5s ease infinite both;
+    top: 0;
+    left: 0;
+}
+@keyframes move {
+    0%{
+        background-color: rgb(135, 58, 207);
+        transition: all 2s ease;
+    }
+    20%{
+        background-color:#8B1A62;
+        transition: all 2s ease;
+    }
+    40%{
+        background-color:rgb(209, 101, 101);;
+        transition: all 2s ease;
+    }
+    60%{
+        background-color: #00D5D5;
+        transition: all 1s ease;
+    }
+    80%{
+        background-color: #E99330;
+        transition: all 1s ease;
+    }
+    100%{
+        background-color: #00D139;
+        transition: all 1s ease;
+    }
+}
+.content>.color4>img{
+    width: 50%;
+    transform: rotate(210deg);
+}
+.content2{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter, sans-serif;
+   
+}
+.content2>h1{
+    Font-size: 45px;
+    Font-weight: 600;
+}
+.content2>h2{
+    Font-size: 25px;
+    Font-weight: 600;
+    padding: 0.6vmax 2vmax;
+    border-top-right-radius: 1vmax;
+    border-bottom-left-radius: 1vmax;
+    background-color: rgb(7, 185, 117);
+}
